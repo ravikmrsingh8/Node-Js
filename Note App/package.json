@@ -1,0 +1,15 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "Note app , using yargs and filessytem",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ravi Singh",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {}
+}
