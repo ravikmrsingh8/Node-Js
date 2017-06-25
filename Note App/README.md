@@ -1,5 +1,5 @@
-#install
+#install <br />
 npm install
 
-#run 
+#run <br />
 node src/js/app.js --help
