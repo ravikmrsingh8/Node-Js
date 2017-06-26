@@ -2,16 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css"/>
     <title>Home page</title>
 </head>
 <body>
 {{> header}}
-<hr />
-<div class="content">
-    {{screamIt welcomeText}}
-    {{screamIt 'Some String'}}
+<div class="container">
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            {{welcomeText}} <br />
+            {{screamIt 'Some Text to Tset scream method'}}
+        </div>
+    </div>
+    {{> footer}}
+
 </div>
-<hr />
-{{> footer}}
+
+
 </body>
 </html>

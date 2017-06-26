@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{{title}}</title>
-    </head>
-    <body>
-        {{> header}}
-        <hr />
-        <div class="content">
-            About Page Content
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css"/>
+    <title>{{title}}</title>
+</head>
+<body>
+{{> header}}
+<div class="container">
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            {{title}} <br />
+            {{body}}
         </div>
-        <hr />
-        {{> footer}}
-    </body>
+    </div>
+
+    {{> footer}}
+
+</div>
+
+
+</body>
 </html>
