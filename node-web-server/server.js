@@ -1,5 +1,7 @@
 const express = require('express');
 const fs = require('fs');
+
+const port = process.env.PORT || 3000;
 //configure handlebars
 const hbs = require('hbs');
 
@@ -55,7 +57,7 @@ app.get('/bad',(request, response)=>{
     response.send({error:'Something Unexpected occured'});
 });
 
-app.listen(3000, () => {
-    console.log('Server up on 3000\nListening for requests..');
+app.listen(port, () => {
+    console.log(`Server up on ${port}\nListening for requests..`);
 });
 
