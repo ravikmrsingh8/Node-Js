@@ -2,4 +2,4 @@
 npm install
 
 #run <BR />
-node run test
+npm run test
