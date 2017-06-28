@@ -1,0 +1,19 @@
+{
+  "name": "test-spy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha **/*.test.js"
+  },
+  "author": "Ravi Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2",
+    "rewire": "^2.5.2"
+  }
+}
