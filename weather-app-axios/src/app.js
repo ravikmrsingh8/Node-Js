@@ -28,10 +28,15 @@ axios.get(geoCodeUrl).then((response) => {
     return axios.get(weatherInfoUrl);
 
 }).then((response) => {
-    console.log(response.data);
-    //var temp = response.data.currently.apparentTemperature;
-    //var tempInCelsius = ((temp - 32)*5)/9;
-    //console.log("Temperature :",tempInCelsius,"Degree celsius");
+    console.log('Weather:' + JSON.stringify(response.data.weather, undefined, 4));
+    var temp = response.data.main.temp - 273.15;
+
+    var sunrise = new Date(response.data.sys.sunrise * 1000).toTimeString();
+    var sunset = new Date(response.data.sys.sunset * 1000).toTimeString();
+
+    console.log("Temperature :",temp,"*C");
+    console.log("Sun Rise :",sunrise);
+    console.log("Sun Set :",sunset);
 
 }).catch((error) =>{
     if(error.code === 'ENOTFOUND') {
